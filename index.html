@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARCHO TECH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui-top">
+    <h1>ARCHO TECH</h1>
+    <div id="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div>Arrows left: <span id="arrowsLeft">5</span></div>
+    </div>
+  </div>
+
+  <div id="game-wrap">
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <!-- Game Over Popup -->
+  <div id="gameOverPopup" class="hidden">
+    <div class="popup-content">
+      <h2>🏆 Game Over!</h2>
+      <p>Your final score: <strong id="finalScore">0</strong></p>
+      <div class="popup-buttons">
+        <button id="restartBtn">Restart</button>
+        <button id="exitBtn">Exit</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="exitMessage" class="hidden">
+    <p>Thanks for playing! Reload the page to play again.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
